@@ -1,0 +1,113 @@
+@import 'mixin/border-radius';
+@import 'variables/colors';
+@import 'mixin/alerts';
+
+// Big alert warning box
+.alert-box-warning {
+  @include alert-box-wrapper($alert-warning);
+
+  .alert-box-title {
+    @include alert-box-title;
+  }
+
+  .alert-box-content {
+    @include alert-box-content;
+  }
+}
+
+// Big alert danger box
+.alert-box-danger {
+  @include alert-box-wrapper($alert-danger, $alert-text-color);
+
+  .alert-box-title {
+    @include alert-box-title;
+  }
+
+  .alert-box-content {
+    @include alert-box-content;
+  }
+}
+
+
+// Big alert successs
+.alert-box-success {
+  @include alert-box-wrapper($alert-success, $alert-text-color);
+
+  .alert-box-title {
+    @include alert-box-title;
+  }
+
+  .alert-box-content {
+    @include alert-box-content;
+  }
+}
+
+// Big alert info
+.alert-box-info {
+  @include alert-box-wrapper($alert-info, $alert-text-color);
+
+  .alert-box-title {
+    @include alert-box-title;
+  }
+
+  .alert-box-content {
+    @include alert-box-content;
+  }
+}
+
+// Small alert boxes;
+.alert-primary {
+  @include alert-small-box($alert-primary-background, $alert-primary-border);
+
+  .alert-close {
+    @include alert-close;
+  }
+}
+
+.alert-secondary {
+  @include alert-small-box($alert-secondary-background, $alert-secondary-border);
+
+  .alert-close {
+    @include alert-close;
+  }
+}
+
+.alert-success {
+  @include alert-small-box($alert-success-background, $alert-success-border);
+
+  .alert-close {
+    @include alert-close;
+  }
+}
+
+.alert-danger {
+  @include alert-small-box($alert-danger-background, $alert-danger-border);
+
+  .alert-close {
+    @include alert-close;
+  }
+}
+
+.alert-warning {
+  @include alert-small-box($alert-warning-background, $alert-warning-border);
+
+  .alert-close {
+    @include alert-close;
+  }
+}
+
+.alert-info {
+  @include alert-small-box($alert-info-background, $alert-info-border);
+
+  .alert-close {
+    @include alert-close;
+  }
+}
+
+.alert-dark {
+  @include alert-small-box($alert-dark-background, $alert-dark-border);
+
+  .alert-close {
+    @include alert-close;
+  }
+}

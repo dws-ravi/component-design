@@ -1,0 +1,48 @@
+@mixin defaut-btn($background-color:#ffffff, $text-color:#000000, $border:0px) {
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  user-select: none;
+  display: inline-block;
+  background-color: $background-color;
+  color: $text-color;
+  padding-left: 20px;
+  padding-right: 20px;
+  height: 36px;
+  font-family: Oxygen;
+  font-size: 14px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.21;
+  letter-spacing: normal;
+  text-align: left;
+  border: $border;
+
+}
+@mixin line-btn($border-text:#ACB0B4) {
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  user-select: none;
+  display: inline-block;
+  background-color: #ffffff;
+  color: $border-text;
+  padding-left: 20px;
+  padding-right: 20px;
+  height: 36px;
+  font-family: Oxygen;
+  font-size: 14px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.21;
+  letter-spacing: normal;
+  text-align: left;
+  border: 1px solid $border-text;
+
+}
+@mixin line-button($border-pixel, $color) {
+  border-radius: 2px solid $color;
+  color: $color
+}

@@ -1,0 +1,104 @@
+@import 'mixin/border-radius';
+@import 'variables/colors';
+@import 'mixin/button';
+
+
+// Default
+
+.btn-primary {
+  @include defaut-btn($btn-primary);
+  @include border-radius(2px);
+  &:hover {
+    background-color: $btn-primary-hover;
+  }
+}
+
+.btn-secondary {
+  @include defaut-btn($btn-secondary, $btn-default-text-color);
+  @include border-radius(2px);
+  &:hover {
+    background-color: $btn-secondary-hover;
+  }
+}
+
+.btn-success {
+  @include defaut-btn($btn-success, $btn-default-text-color);
+  @include border-radius(2px);
+  &:hover {
+    background-color: $btn-success-hover;
+  }
+}
+
+.btn-danger {
+  @include defaut-btn($btn-danger, $btn-default-text-color);
+  @include border-radius(2px);
+  &:hover {
+    background-color: $btn-danger-hover;
+  }
+}
+
+.btn-warning {
+  @include defaut-btn($btn-warning);
+  @include border-radius(2px);
+  &:hover {
+    background-color: $btn-warning-hover;
+  }
+}
+
+.btn-info {
+  @include defaut-btn($btn-info, $btn-default-text-color);
+  @include border-radius(2px);
+  &:hover {
+    background-color: $btn-info-hover;
+  }
+}
+
+.btn-link {
+  @include defaut-btn($btn-link);
+  @include border-radius(2px);
+  &:hover {
+    background-color: $btn-link-hover;
+    color: $btn-default-text-color;
+  }
+}
+
+// Line Button
+
+.btn-line-primary {
+  @include line-btn;
+  @include border-radius(2px);
+}
+
+.btn-line-secondary {
+  @include line-btn($btn-secondary);
+  @include border-radius(2px);
+}
+
+.btn-line-success {
+  @include line-btn($btn-success);
+  @include border-radius(2px);
+}
+
+.btn-line-danger {
+  @include line-btn($btn-danger);
+  @include border-radius(2px);
+}
+
+.btn-line-warning {
+  @include line-btn($btn-warning);
+  @include border-radius(2px);
+}
+
+.btn-line-info {
+  @include line-btn($btn-info);
+  @include border-radius(2px);
+}
+
+.btn-line-link {
+  @include line-btn($btn-link);
+  @include border-radius(2px);
+  &:hover {
+    background-color: $btn-link-hover;
+    color: $btn-default-text-color;
+  }
+}

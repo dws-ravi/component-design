@@ -1,0 +1,14 @@
+@import 'mixin/border-radius';
+
+
+@mixin card($background-color, $border-color:#efeff0) {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: $background-color;
+  @include border-radius(4px);
+  border:1px solid $border-color;
+
+}
